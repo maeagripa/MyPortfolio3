@@ -20,6 +20,8 @@ body {
     position: fixed;
     top: 0;
     z-index: 1000;
+    padding: 10px 20px;
+    transition: height 0.3s ease;
 }
 
 .project-title {
@@ -31,6 +33,11 @@ body {
     font-size: 35px;
     color: #ffa31a;
     margin: 10px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-links ul {
@@ -51,10 +58,56 @@ body {
     display: block;
 }
 
-/* SIMPLE ANIMATION FOR NAVIGATION BAR */
 .navbar-links li:hover {
     background-color: #e4fff6;
     border-radius: 0.5rem;
+}
+
+/* HAMBURGER MENU */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
 }
 
 /* HOME SECTION */
@@ -329,49 +382,36 @@ button:hover {
 
 .contact-form textarea {
     resize: none;
-    height: 200px;
 }
 
-.contact-form .send-button {
-    border: none;
-    outline: none;
-    background: #ffa31a;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
+.contact-form button {
+    background: #f9004d;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.4s;
     cursor: pointer;
 }
 
-.contact-form .send-button:hover {
-    background: hsl(181, 100%, 44%, 0.8);
-    transition: 0.3s all linear;
+.contact-form button:hover {
+    background: transparent;
+    border: 2px solid #f9004d;
 }
 
-.map iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #292929;
+    color: white;
 }
 
-@media (max-width: 964px) {
-    .contact-container {
-        margin: 0 auto;
-        width: 90%;
-    }
-}
-
-@media (max-width: 700px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .map iframe {
-        height: 400px;
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .project-title, .project-title1 {
+        font-size: 25px;
     }
 
     .about {
@@ -379,11 +419,7 @@ button:hover {
         align-items: center;
     }
 
-    .about img {
-        width: 100%;
-    }
-
-    .about-text {
+    .about img, .about-text {
         width: 100%;
         text-align: center;
     }
