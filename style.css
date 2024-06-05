@@ -69,9 +69,9 @@ body {
 /* HOME SECTION */
 #section1 {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("img/home_pic.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;	
+background: #008B8B;
 }
 
 .section1-content {
