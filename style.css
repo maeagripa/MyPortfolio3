@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -82,18 +83,21 @@ body {
 @media (max-width: 700px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Adjust alignment */
         height: auto;
     }
 
     .navbar-links {
-        display: none;
+        display: flex;
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center align links */
         width: 100%;
+        margin-top: 10px; /* Add some spacing */
     }
 
     .navbar-links ul {
-        flex-direction: column;
-        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .navbar-links li {
@@ -101,14 +105,28 @@ body {
         width: 100%;
     }
 
-    .navbar-links.active {
-        display: flex;
+    .navbar-links li a {
+        padding: 15px 0; /* Adjust padding */
     }
 
     .menu-toggle {
         display: flex;
+        align-self: flex-end; /* Move to the right */
+        margin: 10px 10px 0 0; /* Add margin */
+    }
+
+    .menu-toggle div {
+        width: 25px; /* Reduce width */
+        height: 3px;
+        background: black;
+        margin: 4px 0; /* Adjust margin */
+    }
+
+    .navbar-links.active {
+        display: flex;
     }
 }
+
 
 /* HOME SECTION */
 #section1 {
