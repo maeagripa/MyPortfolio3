@@ -8,7 +8,7 @@
             font-family: Times New Roman;
         }
 
-        /* NAVIGATION BAR */
+/* NAVIGATION BAR */
 .navbar {
     display: flex;
     justify-content: center; /* Center align items horizontally */
@@ -117,6 +117,11 @@
         background: black;
         margin: 4px 0; /* Adjust margin */
     }
+    
+    .navbar .navbar-links {
+        display: flex !important; /* Ensure navbar links are displayed */
+    }
+
 }
 
         /* HOME SECTION */
