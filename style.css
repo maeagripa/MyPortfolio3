@@ -21,14 +21,19 @@ body {
     position: fixed;
     top: 0;
     z-index: 1000;
-    padding: 0 10px; /* Reduced padding */
+    padding: 10px 20px; /* Added padding for better spacing */
     transition: height 0.3s ease;
 }
 
-.project-title, .project-title1 {
-    font-size: 25px; /* Reduced font size */
-    margin: 0; /* Removed margin */
-    padding: 10px 0; /* Added padding */
+.project-title {
+    font-size: 35px;
+    margin: 0;
+}
+
+.project-title1 {
+    font-size: 35px;
+    color: #ffa31a;
+    margin: 0;
 }
 
 .navbar-links {
@@ -41,6 +46,7 @@ body {
     padding: 0;
     display: flex;
     list-style: none;
+    gap: 20px; /* Added gap for spacing between links */
 }
 
 .navbar-links li {
@@ -50,7 +56,7 @@ body {
 .navbar-links li a {
     text-decoration: none;
     color: black;
-    padding: 10px 5px; /* Adjusted padding */
+    padding: 10px 15px; /* Adjusted padding for better spacing */
     display: block;
 }
 
@@ -68,26 +74,30 @@ body {
 }
 
 .menu-toggle div {
-    width: 25px; /* Reduced width */
+    width: 30px;
     height: 3px;
     background: black;
-    margin: 4px 0; /* Adjusted margin */
+    margin: 5px 0;
     transition: all 0.3s ease;
 }
 
 @media (max-width: 700px) {
     .navbar {
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Adjust alignment */
         height: auto;
     }
 
     .navbar-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: none;
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center align links */
         width: 100%;
-        margin-top: 10px;
+        margin-top: 10px; /* Add some spacing */
+    }
+
+    .navbar-links.active {
+        display: flex;
     }
 
     .navbar-links ul {
@@ -101,21 +111,22 @@ body {
     }
 
     .navbar-links li a {
-        padding: 10px 0; /* Adjusted padding */
+        padding: 15px 0; /* Adjust padding */
     }
 
     .menu-toggle {
         display: flex;
-        align-self: flex-end;
-        margin: 10px 10px 0 0;
+        align-self: flex-end; /* Move to the right */
+        margin: 10px 10px 0 0; /* Add margin */
     }
 
     .menu-toggle div {
-        width: 25px;
+        width: 25px; /* Reduce width */
         height: 3px;
         background: black;
-        margin: 4px 0;
+        margin: 4px 0; /* Adjust margin */
     }
+
 
     .navbar-links.active {
         display: flex;
