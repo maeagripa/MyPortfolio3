@@ -47,8 +47,9 @@
 .navbar-links li a {
     text-decoration: none;
     color: black;
-    padding: 10px 15px; /* Adjusted padding for better spacing */
+    padding: 8px 12px; /* Adjusted padding for better spacing */
     display: block;
+    font-size: 16px; /* Reduced font size */
 }
 
 .navbar-links li:hover {
@@ -102,7 +103,7 @@
     }
 
     .navbar-links li a {
-        padding: 15px 0; /* Adjust padding */
+        padding: 12px 0; /* Adjust padding */
     }
 
     .menu-toggle {
@@ -121,8 +122,9 @@
     .navbar .navbar-links {
         display: flex !important; /* Ensure navbar links are displayed */
     }
-
 }
+
+
 
         /* HOME SECTION */
         #section1 {
