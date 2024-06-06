@@ -20,20 +20,15 @@ body {
     overflow: hidden;
     position: fixed;
     top: 0;
-    z-index:1000;
-    padding: 0px 5px;
+    z-index: 1000;
+    padding: 0 10px; /* Reduced padding */
     transition: height 0.3s ease;
 }
 
-.project-title {
-    font-size: 35px;
-    margin: 1px;
-}
-
-.project-title1 {
-    font-size: 35px;
-    color: #ffa31a;
-    margin: 5px;
+.project-title, .project-title1 {
+    font-size: 25px; /* Reduced font size */
+    margin: 0; /* Removed margin */
+    padding: 10px 0; /* Added padding */
 }
 
 .navbar-links {
@@ -55,7 +50,7 @@ body {
 .navbar-links li a {
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 10px 5px; /* Adjusted padding */
     display: block;
 }
 
@@ -73,26 +68,26 @@ body {
 }
 
 .menu-toggle div {
-    width: 30px;
+    width: 25px; /* Reduced width */
     height: 3px;
     background: black;
-    margin: 5px 0;
+    margin: 4px 0; /* Adjusted margin */
     transition: all 0.3s ease;
 }
 
 @media (max-width: 700px) {
     .navbar {
         flex-direction: column;
-        align-items: center; /* Adjust alignment */
+        align-items: center;
         height: auto;
     }
 
     .navbar-links {
         display: flex;
-        flex-direction: column; /* Change to column layout */
-        align-items: center; /* Center align links */
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        margin-top: 10px; /* Add some spacing */
+        margin-top: 10px;
     }
 
     .navbar-links ul {
@@ -106,20 +101,20 @@ body {
     }
 
     .navbar-links li a {
-        padding: 15px 0; /* Adjust padding */
+        padding: 10px 0; /* Adjusted padding */
     }
 
     .menu-toggle {
         display: flex;
-        align-self: flex-end; /* Move to the right */
-        margin: 10px 10px 0 0; /* Add margin */
+        align-self: flex-end;
+        margin: 10px 10px 0 0;
     }
 
     .menu-toggle div {
-        width: 25px; /* Reduce width */
+        width: 25px;
         height: 3px;
         background: black;
-        margin: 4px 0; /* Adjust margin */
+        margin: 4px 0;
     }
 
     .navbar-links.active {
