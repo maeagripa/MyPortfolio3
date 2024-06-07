@@ -20,9 +20,3 @@ lightbox.addEventListener('click', e => {
   lightbox.classList.remove('active')
 })
 
-const menuToggle = document.querySelector('.menu-toggle');
-const navbarLinks = document.querySelector('.navbar-links');
-
-menuToggle.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-});
