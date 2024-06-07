@@ -116,6 +116,8 @@ body {
 
     .navbar-links li a {
         padding: 15px 0;
+        border: 2px solid black;
+        margin: 5px 0;
     }
 
     .menu-toggle {
