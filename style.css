@@ -38,7 +38,7 @@ html {
     padding: 0;
     display: flex;
     list-style: none;
-    gap: 5px; /* Adjusted gap for spacing between links */
+    gap: 0px; /* Adjusted gap for spacing between links */
     justify-content: center; /* Center align items horizontally */
 }
 
